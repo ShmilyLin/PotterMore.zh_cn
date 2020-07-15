@@ -1,0 +1,194 @@
+.dtsidebar {
+    flex-shrink: 0;
+    height: 100%;
+    background-color: rgb(60, 60, 60);
+
+    .dtsidebar-bottom-showtype {
+        display: flex;
+        flex-direction: row;
+        align-items: center;
+        border: 1px solid rgb(100, 100, 100);
+        border-radius: 4px;
+        height: 24px;
+
+        .dtsidebar-bottom-showtype-item {
+            width: 36px;
+            height: 100%;
+            cursor: pointer;
+            text-align: center;
+            line-height: 24px;
+            font-size: 12px;
+            color: rgb(100, 100, 100);
+        }
+
+        .dtsidebar-bottom-showtype-item-selected {
+            background-color: rgb(100, 100, 100);
+            color: rgb(60, 60, 60);
+        }
+
+        .dtsidebar-bottom-showtype-line {
+            height: 100%;
+            width: 1px;
+            background-color: rgb(100, 100, 100);
+        }
+    }
+
+    .dtsidebar-normal-view {
+        padding: 0 10px;
+        width: fit-content;
+        height: 100%;
+        background-color: rgb(60, 60, 60);
+        display: flex;
+        flex-direction: column;
+        justify-content: space-between;
+
+        .dtsidebar-normal-view-top {
+            flex-shrink: 0;
+            width: fit-content;
+
+            .dtsidebar-normal-view-header {
+                display: flex;
+                flex-direction: row;
+                align-items: center;
+    
+                .dtsidebar-normal-view-header-back {
+                    width: 50px;
+                    height: 50px;
+                    background-image: url(../../assets/back_white.png);
+                    background-position: center;
+                    background-repeat: no-repeat;
+                    background-size: 18px auto;
+                    cursor: pointer;
+                }
+            }
+        }
+
+        .dtsidebar-normal-view-bottom {
+            flex-shrink: 0;
+            margin-bottom: 20px;
+
+            .dtsidebar-normal-view-bottom-showtype {
+                display: flex;
+                flex-direction: row;
+                align-items: center;
+                border: 1px solid rgb(100, 100, 100);
+                border-radius: 4px;
+                height: 24px;
+
+                .dtsidebar-normal-view-bottom-showtype-item {
+                    width: 36px;
+                    height: 100%;
+                    cursor: pointer;
+                }
+
+                .dtsidebar-normal-view-bottom-showtype-item-selected {
+                    background-color: rgb(100, 100, 100);
+                }
+
+                .dtsidebar-normal-view-bottom-showtype-line {
+                    height: 100%;
+                    width: 1px;
+                    background-color: rgb(100, 100, 100);
+                }
+            }
+        }
+    }
+}
+
+.dtsidebar-hidden {
+    width: 0;
+
+    .dtsidebar-normal-view {
+        display: none;
+    }
+}
+
+.dtsidebar-minimize {
+    width: 2px;
+    cursor: pointer;
+
+    .dtsidebar-normal-view {
+        display: none;
+    }
+
+    &:hover {
+        .dtsidebar-normal-view {
+            display: flex;
+            position: absolute;
+            top: 0;
+            left: 0;
+            z-index: 1;
+        }
+    }
+}
+
+.dtsidebar-small {
+    width: 50px;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: space-between;
+
+    .dtsidebar-small-top {
+        width: 100%;
+        flex-shrink: 0;
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+
+        .dtsidebar-small-top-back {
+            width: 50px;
+            height: 50px;
+            background-image: url(../../assets/back_white.png);
+            background-position: center;
+            background-repeat: no-repeat;
+            background-size: 18px auto;
+            cursor: pointer;
+        }
+    }
+
+    .dtsidebar-small-bottom {
+        flex-shrink: 0;
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        padding-bottom: 20px;
+
+        .dtsidebar-small-bottom-showtype {
+            flex-shrink: 0;
+            width: 28px;
+            height: 24px;
+            border: 1px solid rgb(100, 100, 100);
+            border-radius: 4px;
+            cursor: pointer;
+            font-size: 12px;
+            color: rgb(100, 100, 100);
+            text-align: center;
+            line-height: 24px;
+
+            .dtsidebar-bottom-showtype {
+                display: none;
+                width: fit-content;
+                position: absolute;
+                top: -1px;
+                left: -1px;
+                background-color: rgb(60, 60, 60);
+                z-index: 1;
+            }
+
+            &:hover {
+                .dtsidebar-bottom-showtype {
+                    display: flex;
+                }
+            }
+        }
+    }
+
+    .dtsidebar-normal-view {
+        display: none;
+    }
+}
+
+.dtsidebar-normal {
+    width: fit-content;
+}

@@ -1,0 +1,43 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.Storyboard.XIB" version="3.0" toolsVersion="15705" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" useSafeAreas="YES" colorMatched="YES">
+    <device id="retina6_1" orientation="portrait" appearance="light"/>
+    <dependencies>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="15706"/>
+        <capability name="Safe area layout guides" minToolsVersion="9.0"/>
+        <capability name="documents saved in the Xcode 8 format" minToolsVersion="8.0"/>
+    </dependencies>
+    <scenes>
+        <!--Navigation View Controller-->
+        <scene sceneID="e0r-iN-5DZ">
+            <objects>
+                <navigationController storyboardIdentifier="PMArchiveNavigationViewController" useStoryboardIdentifierAsRestorationIdentifier="YES" id="lvl-Fu-MkP" customClass="PMNavigationViewController" customModule="PotterMore" customModuleProvider="target" sceneMemberID="viewController">
+                    <navigationBar key="navigationBar" contentMode="scaleToFill" insetsLayoutMarginsFromSafeArea="NO" id="BjA-J2-A0M">
+                        <rect key="frame" x="0.0" y="44" width="414" height="44"/>
+                        <autoresizingMask key="autoresizingMask"/>
+                    </navigationBar>
+                    <connections>
+                        <segue destination="Vau-J5-FaT" kind="relationship" relationship="rootViewController" id="XMh-Uf-ZPE"/>
+                    </connections>
+                </navigationController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="hiZ-8l-cnh" userLabel="First Responder" customClass="UIResponder" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="668" y="124"/>
+        </scene>
+        <!--Archive View Controller-->
+        <scene sceneID="lD6-pV-4Qf">
+            <objects>
+                <viewController storyboardIdentifier="PMArchiveViewController" useStoryboardIdentifierAsRestorationIdentifier="YES" id="Vau-J5-FaT" customClass="PMArchiveViewController" customModule="PotterMore" customModuleProvider="target" sceneMemberID="viewController">
+                    <view key="view" contentMode="scaleToFill" id="xIv-4q-YG2">
+                        <rect key="frame" x="0.0" y="0.0" width="414" height="896"/>
+                        <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <color key="backgroundColor" systemColor="systemBackgroundColor" cocoaTouchSystemColor="whiteColor"/>
+                        <viewLayoutGuide key="safeArea" id="FHq-k1-qWE"/>
+                    </view>
+                    <navigationItem key="navigationItem" id="Jmw-Ov-aQF"/>
+                </viewController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="uOO-ru-JIN" userLabel="First Responder" customClass="UIResponder" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="130" y="769"/>
+        </scene>
+    </scenes>
+</document>

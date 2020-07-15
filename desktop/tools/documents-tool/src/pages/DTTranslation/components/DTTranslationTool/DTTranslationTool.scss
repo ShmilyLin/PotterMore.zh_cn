@@ -1,0 +1,28 @@
+.dttranslationtool {
+    width: 100%;
+    height: 32px;
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    justify-content: space-between;
+    border-bottom: 1px solid rgb(204, 204, 204);
+
+    .dttranslationtool-left {
+        flex-shrink: 0;
+        padding-left: 10px;
+        display: flex;
+        flex-direction: row;
+        align-items: center;
+
+        .dttranslationtool-left-back {
+            flex-shrink: 0;
+            width: 32px;
+            height: 32px;
+            background-image: url(../../../../assets/back.png);
+            background-repeat: no-repeat;
+            background-position: center;
+            background-size: 18px auto;
+            cursor: pointer;
+        }
+    }
+}
